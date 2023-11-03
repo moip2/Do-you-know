@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <title>英师集</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #563761;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: #ffe26f; text-align: center; font-size: 1000%; margin: 0; background-color: #a7425c">英师集</h1>
+    <h1 style="color: #a7425c; text-align: center; font-size: 200%; margin: 0; background-color: #ffe26f ">英师的教诲忘不得，接下来记录她的金句等出名词汇与句子。</h1>
+    <a href="index.html" style="display: block; color: #563761; font-size: 150%; font-weight: 700; margin: 0; background-color: #f3825f; text-align: center; TEXT-DECORATION: none ">>>返回<<</a>
+    <p style="font-size: 300%; background-color: #a7425c; color: #ffe26f; text-align: center; margin: 0; font-weight: 700 ">>短语&语气词|</p>
+    <ul style="color: #ffe26f; text-align: center; font-size: 200%; margin: 0; font-weight: 700 ">
+        <li onclick="changeText1()" id="1">内/ねえ(ne e)</li>
+        <li onclick="changeText2()" id="2">诺</li>
+        <li onclick="changeText3()" id="3">door(音译)</li>
+        <li onclick="changeText4()" id="4">哦哟/哦哟勒</li>
+        <li onclick="changeText5()" id="5">大大滴错啦</li>
+    </ul>
+
+    <script>
+        function changeText1() {
+            var a = document.getElementById("1");
+            a.innerHTML = "无义语气词，常用于语句结束，ねえ意为--喂";
+            setTimeout(function () {
+                a.innerHTML = "内/ねえ";  // 原来的文字
+            }, 4000);  // 5秒后变回原来的文字
+        }
+        function changeText2() {
+            var a = document.getElementById("2");
+            a.innerHTML = "就这样，看这里";
+            setTimeout(function () {
+                a.innerHTML = "诺";  // 原来的文字
+            }, 4000);  // 5秒后变回原来的文字
+        }
+        function changeText3() {
+            var a = document.getElementById("3");
+            a.innerHTML = "对吧？";
+            setTimeout(function () {
+                a.innerHTML = "door(音译)";  // 原来的文字
+            }, 4000);
+        }
+        function changeText4() {
+            var a = document.getElementById("4");
+            a.innerHTML = "表惊讶，略微嘲笑";
+            setTimeout(function () {
+                a.innerHTML = "哦哟/哦哟勒";  // 原来的文字
+            }, 4000);
+        }
+        function changeText5() {
+            var a = document.getElementById("5");
+            a.innerHTML = "不言而喻<:";
+            setTimeout(function () {
+                a.innerHTML = "大大滴错啦";  // 原来的文字
+            }, 4000);
+        }
+    </script>
+</body>
+</html>
