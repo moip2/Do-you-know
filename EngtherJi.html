@@ -8,7 +8,7 @@
     <style>
         body {
             margin: 0;
-            background-color: #563761;
+            background-image: url("https://pic3.zhimg.com/c6035f76c410f00f2a1071971d643237_r.jpg?source=1940ef5c");
         }
         ::-webkit-scrollbar {
             width: 10px; /* 滚动条的宽度 */
@@ -26,234 +26,196 @@
         ::-webkit-scrollbar-thumb:hover {
                 background: #555; /* 鼠标悬停在滚动条滑块上的背景色 */
         }  
+
     </style>
+
 </head>
 <body>
-    <h1 style="color: #ffe26f; text-align: center; font-size: 500%; margin: 0; background-color: #a7425c">英师集</h1>
-    <h1 style="color: #a7425c; text-align: center; font-size: 200%; margin: 0; background-color: #ffe26f ">英师的教诲忘不得，接下来记录她的金句等出名词汇与句子。</h1>
-    <a href="index.html" style="display: block; color: #563761; font-size: 150%; font-weight: 700; margin: 0; background-color: #f3825f; text-align: center; TEXT-DECORATION: none ">>>返回<<</a>
-
-    <div style="position: fixed; left: 25px; top: 25px; background-color:rgb(255 255 255);border-radius: 25px " id="myButton">
-        <a><img src="bt.png" width="25" height="40" /></a>
+    <div style="display: block; padding: 10px; background-color: rgba(89, 89, 89, 0.15);position:absolute;left:100px;right:50px; backdrop-filter: blur(7px);  -webkit-backdrop-filter: blur(7px); border: 1px solid rgba(255, 255, 255, 0.18); box-shadow: rgba(14, 14, 14, 0.19) 0px 6px 15px 0px; -webkit-box-shadow: rgba(14, 14, 14, 0.19) 0px 6px 15px 0px; border-radius: 50px; -webkit-border-radius: 50px; color: rgba(128, 128, 128, 0.6) ">
+        <h1 style="color: #ffe26f; text-align: center; font-size: 500%; margin: 0; ">英师集</h1>
+        <h1 style="color: #a7425c; text-align: center; font-size: 200%; margin: 0;  ">英师的教诲忘不得，接下来记录她的金句等出名词汇与句子。</h1>
+        <a href="index.html" style="display: block; color: #ffe26f; font-size: 150%; font-weight: 700; margin: 0; text-align: center; TEXT-DECORATION: none ">>>返回<<</a>
     </div>
-    <div style="position: fixed; left: 20px; top: 220px; background-color:rgb(255 255 255);border-radius: 25px ">
-        <a href="#JU" id="JUU"><img src="JU.png" width="100" height="100" /></a>
-    </div>
-    <div style="position: fixed; left: 20px; top: 100px; background-color:rgb(255 255 255);border-radius: 25px ">
-        <a href="#CI" id="CII"><img src="CII.png" width="100" height="100" /></a>
+        <div style="position: fixed; left: 25px; top: 25px; background-color:rgb(255 255 255);border-radius: 25px " id="myButton">
+            <a><img src="bt.png" width="30" height="30" /></a>
+        </div>
+        <div style="position: fixed; background-color: rgba(255,255,255, 0.25); backdrop-filter: blur(7px); -webkit-backdrop-filter: blur(7px); border: 1px solid rgba(255, 255, 255, 0.18); box-shadow: rgba(14, 14, 14, 0.19) 0px 6px 15px 0px; -webkit-box-shadow: rgba(14, 14, 14, 0.19) 0px 6px 15px 0px; border-radius: 25px; -webkit-border-radius: 25px; color: rgba(128, 128, 128, 0.6); top:75px">
+            <a href="#JU" id="JUU"><img src="JU.png" width="75" height="75" /></a>
+        </div>
+        <div style="position: fixed; background-color: rgba(255, 255, 255, 0.25); backdrop-filter: blur(7px); -webkit-backdrop-filter: blur(7px); border: 1px solid rgba(255, 255, 255, 0.18); box-shadow: rgba(14, 14, 14, 0.19) 0px 6px 15px 0px; -webkit-box-shadow: rgba(14, 14, 14, 0.19) 0px 6px 15px 0px; border-radius: 25px; -webkit-border-radius: 25px; color: rgba(128, 128, 128, 0.6);top:170px ">
+            <a href="#CI" id="CII"><img src="CII.png" width="75" height="75" /></a>
 
-    </div>
-
-
-
-    <p style="font-size: 300%; background-color: #a7425c; color: #ffe26f; text-align: center; margin: 0; font-weight: 700 " id="CI">>短语&语气词|</p>
-    <ul style="color: #ffe26f; text-align: center; font-size: 200%; margin: 0; font-weight: 700 ">
-        <li onclick="changeText1()" id="1">内/ねえ(ne e)</li>
-        <li onclick="changeText2()" id="2">诺</li>
-        <li onclick="changeText3()" id="3">door(音译)</li>
-        <li onclick="changeText4()" id="4">哦哟/哦哟勒</li>
-        <li onclick="changeText5()" id="5">大大滴错啦</li>
-    </ul>
-    <script>
-        function changeText1() {
-            var a = document.getElementById("1");
-            a.innerHTML = "无义语气词，常用于语句结束，ねえ意为--喂";
-            setTimeout(function () {
-                a.innerHTML = "内/ねえ";  // 原来的文字
-            }, 4000);  // 5秒后变回原来的文字
-        }
-        function changeText2() {
-            var a = document.getElementById("2");
-            a.innerHTML = "就这样，看这里";
-            setTimeout(function () {
-                a.innerHTML = "诺";  // 原来的文字
-            }, 4000);  // 5秒后变回原来的文字
-        }
-        function changeText3() {
-            var a = document.getElementById("3");
-            a.innerHTML = "对吧？";
-            setTimeout(function () {
-                a.innerHTML = "door(音译)";  // 原来的文字
-            }, 4000);
-        }
-        function changeText4() {
-            var a = document.getElementById("4");
-            a.innerHTML = "表惊讶，略微嘲笑";
-            setTimeout(function () {
-                a.innerHTML = "哦哟/哦哟勒";  // 原来的文字
-            }, 4000);
-        }
-        function changeText5() {
-            var a = document.getElementById("5");
-            a.innerHTML = "不言而喻<:";
-            setTimeout(function () {
-                a.innerHTML = "大大滴错啦";  // 原来的文字
-            }, 4000);
-        }
-    </script>
-    <p style="font-size: 300%; background-color: #a7425c; color: #ffe26f; text-align: center; margin: 0; font-weight: 700 " id="JU">>句子|</p>
-    <ul style="color: #ffe26f; text-align: center; font-size: 200%; margin: 0; font-weight: 700 ">
-        <li>神经病一样呐</li>
-        <li>真是无语了呐</li>
-        <li>-鬼在我面前都要现形-</li>
-        <li>故意请假，早就预谋好了</li>
-        <li>自己想想看呐</li>
-        <li>心里肯定有鬼</li>
-        <li>下课睡什么睡啊</li>
-        <li>AB组的，中午不要睡</li>
-        <li>前面还是后面？</li>
-        <li>你以前短不短？</li>
-        <li>一点都不疯，人家都很疯的</li>
-        <li>这个什么什么人，他是要干嘛干嘛，他又到哪里哪里去，然后又怎么怎么样，呐</li>
-        <li>这篇作文我都会背了 @%&…^!~#…￥&#_%&(走出教室)</li>
-    </ul>
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <script>
-        window.alert("提示:点击重启图标按钮可以显示、隐藏大图标，点击短语部分的词语可以显示其意思");
-
-        // 获取按钮元素
-        var button = document.getElementById('myButton');
-
-        // 监听点击事件
-        button.addEventListener('click', function () {
-            var a = document.getElementById('JUU');
-            var b = document.getElementById('CII');
-
-            if (a.style.display === 'none') {
-                a.style.display = 'block';
-                b.style.display = 'block';
-            } else {
-                a.style.display = 'none';
-                b.style.display = "none";
+        </div>
+        <script>
+            function changeText1() {
+                var a = document.getElementById("1");
+                a.innerHTML = "无义语气词，常用于语句结束，ねえ意为--喂";
+                setTimeout(function () {
+                    a.innerHTML = "内/ねえ";  // 原来的文字
+                }, 4000);  // 5秒后变回原来的文字
             }
-        });
-    </script>
+            function changeText2() {
+                var a = document.getElementById("2");
+                a.innerHTML = "就这样，看这里";
+                setTimeout(function () {
+                    a.innerHTML = "诺";  // 原来的文字
+                }, 4000);  // 5秒后变回原来的文字
+            }
+            function changeText3() {
+                var a = document.getElementById("3");
+                a.innerHTML = "对吧？";
+                setTimeout(function () {
+                    a.innerHTML = "door(音译)";  // 原来的文字
+                }, 4000);
+            }
+            function changeText4() {
+                var a = document.getElementById("4");
+                a.innerHTML = "表惊讶，略微嘲笑";
+                setTimeout(function () {
+                    a.innerHTML = "哦哟/哦哟勒";  // 原来的文字
+                }, 4000);
+            }
+            function changeText5() {
+                var a = document.getElementById("5");
+                a.innerHTML = "不言而喻<:";
+                setTimeout(function () {
+                    a.innerHTML = "大大滴错啦";  // 原来的文字
+                }, 4000);
+            }
+        </script>
+        <div style="display: block; padding: 10px; background-color: rgba(89, 89, 89, 0.15); backdrop-filter: blur(7px); position: absolute; left: 100px; top: 300px; right: 50px; -webkit-backdrop-filter: blur(7px); border: 1px solid rgba(255, 255, 255, 0.18); box-shadow: rgba(14, 14, 14, 0.19) 0px 6px 15px 0px; -webkit-box-shadow: rgba(14, 14, 14, 0.19) 0px 6px 15px 0px; border-radius: 50px; -webkit-border-radius: 50px; color: rgba(128, 128, 128, 0.6) ">
+            <p style="font-size: 400%; color: #ffe26f; text-align: center; margin: 0; font-weight: 700 " id="JU">---->句子|----</p>
+            <ul style="color: #ffe26f; text-align: center; font-size: 200%; margin: 0; font-weight: 700 ">
+                <li>神经病一样呐</li>
+                <li>真是无语了呐</li>
+                <li>-鬼在我面前都要现形-</li>
+                <li>故意请假，早就预谋好了</li>
+                <li>自己想想看呐</li>
+                <li>心里肯定有鬼</li>
+                <li>下课睡什么睡啊</li>
+                <li>AB组的，中午不要睡</li>
+                <li>前面还是后面？</li>
+                <li>你以前短不短？</li>
+                <li>一点都不疯，人家都很疯的</li>
+                <li>这个什么什么人，他是要干嘛干嘛，他又到哪里哪里去，然后又怎么怎么样，呐</li>
+                <li>这篇作文我都会背了 @%&…^!~#…￥&#_%&(走出教室)</li>
+            </ul>
+            <br />
+            <br />
+            <br />
+            <br />
+            <p style="font-size: 400%;color: #ffe26f; text-align: center; margin: 0; font-weight: 700 " id="CI">---->短语&语气词|----</p>
+            <ul style="color: #ffe26f; text-align: center; font-size: 200%; margin: 0; font-weight: 700 ">
+                <li onclick="changeText1()" id="1">内/ねえ(ne e)</li>
+                <li onclick="changeText2()" id="2">诺</li>
+                <li onclick="changeText3()" id="3">door(音译)</li>
+                <li onclick="changeText4()" id="4">哦哟/哦哟勒</li>
+                <li onclick="changeText5()" id="5">大大滴错啦</li>
+            </ul>
+
+        </div>
+        <script>
+            window.alert("提示:点击重启图标按钮可以显示、隐藏大图标，点击短语部分的词语可以显示其意思");
+
+            // 获取按钮元素
+            var button = document.getElementById('myButton');
+
+            // 监听点击事件
+            button.addEventListener('click', function () {
+                var a = document.getElementById('JUU');
+                var b = document.getElementById('CII');
+
+                if (a.style.display === 'none') {
+                    a.style.display = 'block';
+                    b.style.display = 'block';
+                } else {
+                    a.style.display = 'none';
+                    b.style.display = "none";
+                }
+            });
+        </script>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
 </body>
 </html>
